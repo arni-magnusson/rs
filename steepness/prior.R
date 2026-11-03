@@ -24,7 +24,7 @@ ss3prior <- exp(-f(x, log(median), sigma))
 
 # Plot prior
 png("prior.png", width=2000, height=1200, res=200)
-plot(x, ss3prior, type="l", xlim=c(0.4, 1), xlab="Steepness", ylab="Prior likelihood")
+plot(x, ss3prior, type="l", xlim=c(0.4, 1), xlab="Steepness", ylab="Prior likelihood", lwd=1.5, col=4)
 title(main="Prior on steepness")
 text(0.4, 0.9, "logMedian = 0.79", adj=0)
 text(0.4, 0.8, "sigma = 0.16", adj=0)
